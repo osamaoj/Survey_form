@@ -1,2 +1,90 @@
-<h1 id="title"> Tell me about music<h1/>
-<script type"text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html lang"en">
+    <head>
+    <style>
+     body{
+        font-family:sans-serif;
+        padding-left: 20%;
+        padding-right: 20%;
+        }
+      label{
+        font-size: 28px;
+        display: block;
+        padding-bottom: 10px;
+
+      }
+
+      input, textarea, select {
+        display: block;
+        width: 100%;
+        padding-bottom: 20px;
+      }
+
+      form{
+      background-color: #0055FF;
+      padding: 40px 40px 40px 40px;
+      opacity: 85%;
+     }
+
+     #bottom-area{
+       float:left;
+       width:50%;
+       height:40%;
+
+     }
+
+    input[type=checkbox] :not(old) + label,
+    input[type=radio   ] :not(old) + label{
+    display    :inline-block;
+    margin-left: -20px;
+    paddin-left:  20px;
+    }
+    </style>
+    </head>
+
+    <body>
+        <h1 id="title"> Tell me about music<h1/>
+        <p id="description">
+          This is a survey where you can tell us wbout the music you're inpired by.
+        </p>
+        <form id="survey-form">
+          <label id="name-label"> Name:</label>
+          <input type="text"    name="name"  id="name" required placeholder="Frist Name"></input><br>
+
+          <label id="email-label"> Email:</label>
+          <input type="email"   name="email"  id="email" required placeholder=" best Email"></input><br>
+
+          <label id="number-label"> Number:</label>
+          <input type="Number"  name="Number"  id="number" min="0" max="10" required placeholder="$"></input><br>
+
+          <select id="dropdown" name="guitars">
+            <option value="fender">Fender</option>
+            <option value="martin">Martin</option>
+            <option value="epiphone">Epiphone</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label id="name-label"> Comments:</label>
+          <textarea placeholder="Additional Comments"></textarea><br>
+
+
+          <div id="bottom-area">
+          <label id="name-label"> Gender:</label>
+          <input type="radio" class="inline" value=:"male">Male<br>
+          <input type="radio" class="inline" value=:"female">Female<br>
+          <input type="radio" class="inline" value=:"other">Other<br>
+          </div>
+
+          <div id="bottom-area">
+          <label id="name-label"> Transportion:</label>
+          <input type="checkbox" name="vehicle1" value=:"Bike">I have a bike <br>
+          <input type="checkbox" name="vehicle2" value=:"Car">I have a car<br>
+          <input type="checkbox" name="vehicle3" value=:"Boat" checked>I have a Boat<br>
+          </div>
+
+
+          <input type="submit" id="submit">
+        </form>
+        <script type"text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
